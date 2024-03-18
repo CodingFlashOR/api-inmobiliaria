@@ -118,7 +118,7 @@ REST_FRAMEWORK = {
 # drf-spectacular settings
 SPECTACULAR_SETTINGS = {
     "TITLE": "Inmobiliaria Bonpland API",
-    "DESCRIPTION": "Welcome to the Bonpland Real Estate API documentation. This guide provides detailed information on all available endpoints, including the HTTP methods they accept, the parameters they require, and the response formats they return. This documentation is designed to be a useful reference for both developers who maintain and extend the API, and frontend developers who consume it in their client applications. If you have any questions or encounter any problems, feel free to contact the development team.",
+    "DESCRIPTION": "Welcome to the Bonpland Real Estate API documentation. Here, you'll find comprehensive details about our endpoints, including accepted HTTP methods, required parameters, and response formats. This resource, along with the project's [code](https://github.com/CodingFlashOR/api-inmobiliaria/tree/develop), serves as a practical guide for those learning [Django Rest Framework](https://www.django-rest-framework.org/) API development. You can interact with our read-only endpoints (write and delete operations are secured). For certain endpoints, a test user is available. Please contact the development team for access credentials.\n\n**EMAIL:** user_public@email.com\n\n**PASSWORD:** Aaa123456789\n\nWe hope that this documentation serves as a valuable tool. We encourage you to explore it, interact and learn from it. If you have any further queries or issues, please feel free to contact our development team. Happy coding!",
     "VERSION": "1.0.0",
     "TAGS": [
         {
@@ -127,7 +127,7 @@ SPECTACULAR_SETTINGS = {
         },
     ],
     "SERVE_INCLUDE_SCHEMA": False,
-    "SERVE_PERMISSIONS": ["rest_framework.permissions.IsAuthenticated"],
+    "SERVE_PERMISSIONS": ["rest_framework.permissions.AllowAny"],
     "COMPONENT_SPLIT_REQUEST": True,
     "LICENSE": {
         "name": "MIT License",

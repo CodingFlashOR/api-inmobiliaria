@@ -9,6 +9,7 @@ from apps.users.infrastructure.serializers import RegisterSerializer
 from apps.users.infrastructure.db import UserRepository
 from apps.users.applications import Registration
 from apps.users.schemas.register import ViewSchema
+from apps.permissions import SwaggerUIPublic
 
 
 class RegisterAPIView(generics.GenericAPIView):
@@ -20,6 +21,7 @@ class RegisterAPIView(generics.GenericAPIView):
     """
 
     authentication_classes = ()
+    permission_classes = (SwaggerUIPublic,)
     serializer_class = RegisterSerializer
     application_class = Registration
 
